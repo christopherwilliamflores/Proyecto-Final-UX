@@ -1,0 +1,146 @@
+/* Estilos base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #e9e9e9; /* Fondo general de la página */
+  }
+  
+  /* Simulación de un teléfono móvil */
+  .phone {
+    width: 390px; /* Ancho común para un iPhone 12 */
+    height: 844px; /* Altura común para un iPhone 12 */
+    margin:  auto; /* Centrado en la página con un margen superior */
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para simular el dispositivo */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre el contenido y el footer */
+    /* border-radius: 36px; Bordes redondeados para simular un iPhone */
+    overflow: hidden;
+  }
+  
+  .phone-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px); /* Altura ajustada para el padding */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+  }
+  
+  /* Estilos de la cabecera alineados a la izquierda */
+  .phone-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ccc; /* Línea divisora */
+  }
+  
+  .phone-header h1 {
+    font-size: 24px;
+    color: #000080;
+    text-align: left;
+  }
+  
+  /* Estilos para los elementos de la lista */
+  .toggle-container {
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo del interruptor (switch) */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Estilo de la parte móvil del interruptor */
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Estilo redondeado del interruptor */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Footer fijo en la parte inferior, como en style_second.css */
+  .phone-footer {
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media only screen and (max-width: 400px) {
+    .phone {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border-radius: 0; /* Sin bordes redondeados */
+      box-shadow: none; /* Sin sombra */
+    }
+  
+    .phone-container {
+      padding: 10px;
+    }
+  
+    .phone-footer {
+      position: static; /* El footer ya no es fijo para evitar problemas de visualización en dispositivos móviles */
+    }
+  }
+  
