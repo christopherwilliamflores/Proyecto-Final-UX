@@ -45,6 +45,13 @@ header h1, header h2, header h3 {
     padding: 0 20px;
 }
 
+.card-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
 .card {
     background: #fff;
     border-radius: 10px;
@@ -143,4 +150,27 @@ footer {
 .card_contenedor {
     padding: 5px;
     text-align: left;    
+}
+
+.card-content button.favorite-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc; /* Color inicial del botón de corazón no marcado */
+}
+
+.card-content button.favorite-button.marked {
+    color: #000080; /* Color del botón de corazón marcado */
+}
+
+.card-content button.purchase-button {
+    background-color: #000080; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 15px; /* Ajustes de relleno para el botón */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaciado superior para separar los botones */
 }
