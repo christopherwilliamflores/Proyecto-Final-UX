@@ -85,12 +85,13 @@ header h1, header h2, header h3 {
 footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 390px; /* Ajusta el ancho según el ancho de .phone */
     display: flex;
     justify-content: space-around;
     padding: 10px;
     background: #fff;
     z-index: 1; /* Asegura que el footer esté encima del contenido */
+    margin-top: auto; /* Agrega margen superior automático para alinearse con .phone */
 }
 
 .icon {
