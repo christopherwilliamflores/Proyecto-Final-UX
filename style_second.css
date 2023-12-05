@@ -23,7 +23,7 @@ body, html {
     max-width: 390px;
     margin: auto;
     padding-bottom: 20px;
-    max-height: 100vh; /* Altura máxima igual a la altura de la ventana */
+    max-height: calc(100vh - 60px); /* Altura máxima descontando el espacio del footer */
     overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
 }
 
@@ -74,14 +74,22 @@ header h1, header h2, header h3 {
     color: #666;
 }
 
+/* Footer */
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 10px;
     background: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    z-index: 1; /* Asegura que el footer esté encima del contenido */
+}
+
+.icon {
+    text-decoration: none;
+    color: #000080;
+    font-size: 24px;
 }
 
 /* Ajustes para dispositivos móviles */
@@ -108,6 +116,11 @@ footer {
 
     header {
         padding-left: 10px; /* Menor padding para pantallas pequeñas */
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 }
 .back-button {
