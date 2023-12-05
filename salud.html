@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crisol Beneficios</title>
+<link rel="stylesheet" href="style_second.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="Scripts.js"></script>
+</head>
+<body>
+<div class="phone"> <!-- Contenedor que simula un teléfono -->
+  <div class="app-container"> <!-- Contenedor de la aplicación -->
+    <header>
+       <button class="back-button" onclick="goBack()">←</button>
+      <h1>CrisolBenefics</h1>
+      <h2>Hola, Hubert</h2>
+      <h3>Ofertas</h3>
+    </header>
+    <main>
+      <div class="card-grid1">
+        <div class="card">
+            <img src="./img/salud.jpg" alt="salud">
+            <div class="card-content">
+              <h4>35% Dscto</h4>
+              <p>
+                ¡Cuida de tu bienestar con nuestra extraordinaria oferta del 35% de descuento en todos los libros de salud, solo por hoy! Sumérgete en una biblioteca repleta de conocimientos y consejos que te ayudarán a alcanzar tu máximo potencial de bienestar físico y mental.
+             </p>
+              <button class="favorite-button" onclick="toggleFavorite(this)">&#10084;</button>
+              <button class="purchase-button" onclick="redirectTo('codigo_generado.html')">Adquirir</button>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Iconos de navegación aquí -->
+      <i class="fa-solid fa-house" onclick="redirectTo('second_page.html')"></i>
+      <i class="fa-solid fa-heart" onclick="redirectTo('favoritos.html')"></i>
+      <i class="fa-solid fa-barcode" onclick="redirectTo('codigos.html')"></i>
+      <i class="fa-solid fa-bell" onclick="redirectTo('notificaciones.html')"></i>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

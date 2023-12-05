@@ -12,45 +12,45 @@
 <div class="phone"> <!-- Contenedor que simula un teléfono -->
   <div class="app-container"> <!-- Contenedor de la aplicación -->
     <header>
-      <h1>CrisolBenefics</h1>
-      <h2>Hola, Hubert</h2>
-      <h3>Categorías</h3>
+       <button class="back-button" onclick="goBack()">←</button>
+       <h2>Hola, Hubert</h2>
+       <h3>Proximos Lanzamientos</h3>
     </header>
     <main>
       <div class="card-grid">
-        <div class="card" onclick="redirectTo('ofertas.html')">
-          <img src="./img/imagen_ofertas.png" alt="Ofertas">
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/calendario.jpg" alt="11">
           <div class="card-content">
-            <h4>Ofertas</h4>
-            <p>Descubre una gran variedad de ofertas exclusivas</p>
+            <h4>11 de diciembre</h4>
+            <p>Llega un nuevo libro de aventuras</p>
           </div>
         </div>
-        <div class="card" onclick="redirectTo('lanzamientos.html')">
-          <img src="./img/imagen_lanzamientos.png" alt="Lanzamientos">
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/calendario01.jpg" alt="14">
           <div class="card-content">
-            <h4>Lanzamientos</h4>
-            <p>Descubre lo que está por venir y sé el primero en reservar</p>
+            <h4>14 de diciembre</h4>
+            <p>Tomo 11 de One Piece</p>
           </div>
         </div>
-        <div class="card" onclick="redirectTo('experiencias.html')">
-          <img src="./img/imagen_experiencias.png" alt="Experiencias">
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/calendario.jpg" alt="26">
           <div class="card-content">
-            <h4>Experiencias</h4>
-            <p>Participa de nuestras experiencias únicas</p>
+            <h4>26 de diciembre</h4>
+            <p>Tazas de Harry Potter.</p>
           </div>
         </div>
-        <div class="card" onclick="redirectTo('ofertaDia.html')">
-          <img src="./img/ofertas_del_dia.jp.png" alt="Ofertas del Día">
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/calendario01.jpg" alt="29">
           <div class="card-content">
-            <h4>Ofertas del Día</h4>
-            <p>Benefíciate con las ofertas del día.</p>
+            <h4>29 de diciembre</h4>
+            <p>Libro de autoayuda</p>
           </div>
         </div>
       </div>
     </main>
     <footer>
       <!-- Iconos de navegación aquí -->
-      <i class="fa-solid fa-house" style="color: #052dcc;" onclick="redirectTo('second_page.html')"></i>
+      <i class="fa-solid fa-house" onclick="redirectTo('second_page.html')"></i>
       <i class="fa-solid fa-heart" onclick="redirectTo('favoritos.html')"></i>
       <i class="fa-solid fa-barcode" onclick="redirectTo('codigos.html')"></i>
       <i class="fa-solid fa-bell" onclick="redirectTo('notificaciones.html')"></i>

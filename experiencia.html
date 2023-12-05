@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crisol Beneficios</title>
+<link rel="stylesheet" href="style_second.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="Scripts.js"></script>
+</head>
+<body>
+<div class="phone"> <!-- Contenedor que simula un teléfono -->
+  <div class="app-container"> <!-- Contenedor de la aplicación -->
+    <header>
+       <button class="back-button" onclick="goBack()">←</button>
+       <h2>Hola, Hubert</h2>
+       <h3>Experiencias</h3>
+    </header>
+    <main>
+      <div class="card-grid">
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/clubdelectura.jpg" alt="lectura">
+          <div class="card-content">
+            <h4>Club de Lectura</h4>
+            <p>Ven a nuestro club de lectura</p>
+          </div>
+        </div>
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/firma.jpg" alt="firma">
+          <div class="card-content">
+            <h4>Firma de Libro</h4>
+            <p>Ven a la firma de libro</p>
+          </div>
+        </div>
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/tertulias.jpg" alt="tertulia">
+          <div class="card-content">
+            <h4>Tertulias</h4>
+            <p>Registrate en la tertulias de cada semana</p>
+          </div>
+        </div>
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+          <img src="./img/pintura.jpg" alt="pintura">
+          <div class="card-content">
+            <h4>Taller de Pintura</h4>
+            <p>Registrate en los talleres de pintura que tenemos cada mes</p>
+          </div>
+        </div>
+        <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+            <img src="./img/exposicion.png" alt="exposicion">
+            <div class="card-content">
+              <h4>Exposicion</h4>
+              <p>Serie de exposiciones semanales</p>
+            </div>
+          </div>
+          <div class="card" onclick="redirectTo('detalle_experiencia.html')">
+            <img src="./img/crucigrama.jpg" alt="crucigrama">
+            <div class="card-content">
+              <h4>Crucigrama</h4>
+              <p>Registrate al taller de crucigrama</p>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Iconos de navegación aquí -->
+      <i class="fa-solid fa-house" onclick="redirectTo('second_page.html')"></i>
+      <i class="fa-solid fa-heart" onclick="redirectTo('favoritos.html')"></i>
+      <i class="fa-solid fa-barcode" onclick="redirectTo('codigos.html')"></i>
+      <i class="fa-solid fa-bell" onclick="redirectTo('notificaciones.html')"></i>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

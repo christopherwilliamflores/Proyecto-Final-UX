@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crisol Beneficios</title>
+<link rel="stylesheet" href="style_second.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="Scripts.js"></script>
+</head>
+<body>
+<div class="phone"> <!-- Contenedor que simula un teléfono -->
+  <div class="app-container"> <!-- Contenedor de la aplicación -->
+    <header>
+       <button class="back-button" onclick="goBack()">←</button>
+      <h1>CrisolBenefics</h1>
+      <h2>Hola, Hubert</h2>
+      <h3>Ofertas</h3>
+    </header>
+    <main>
+      <div class="card-grid1">
+        <div class="card">
+            <img src="./img/GRRM.jpg" alt="GRRM">
+            <div class="card-content">
+              <h4>50% Dscto</h4>
+              <p>
+                ¡Atención a todos los aficionados de la fantasía épica! Hoy es tu día de suerte, ya que estamos emocionados de ofrecer una promoción relámpago del 50% de descuento en todos los libros de George R.R. Martin. ¡No te pierdas esta oportunidad única de sumergirte en los intrigantes mundos creados por el maestro de la fantasía!
+                No dejes escapar esta oferta fugaz. ¡Aprovecha el 50% de descuento en todos los libros de George R.R. Martin, solo por hoy, y vive la emoción de la fantasía como nunca antes! 📖🔥
+              </p>
+              <button class="favorite-button" onclick="toggleFavorite(this)">&#10084;</button>
+              <button class="purchase-button" onclick="redirectTo('codigo_generado.html')">Adquirir</button>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Iconos de navegación aquí -->
+      <i class="fa-solid fa-house" onclick="redirectTo('second_page.html')"></i>
+      <i class="fa-solid fa-heart" onclick="redirectTo('favoritos.html')"></i>
+      <i class="fa-solid fa-barcode" onclick="redirectTo('codigos.html')"></i>
+      <i class="fa-solid fa-bell" onclick="redirectTo('notificaciones.html')"></i>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

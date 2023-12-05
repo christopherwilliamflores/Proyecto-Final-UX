@@ -9,23 +9,25 @@
 <script src="Scripts.js"></script>
 </head>
 <body>
-<div class="phone">
-  <div class="app-container">
+<div class="phone"> 
+  <div class="app-container"> 
     <header>
        <button class="back-button" onclick="goBack()">←</button>
-      <h3>QR</h3>
-      <h4>¡Codigo Generado!</h4>
-      <h7>Excelente, tu codigo esta listo para que lo disfrutes.</h7>
+      <h3>Detalle Experiencia</h3>
     </header>
     <main>
-        <div class="contenedor">
-            <div class="card">
-                <img src="img/QR.svg" alt="Código Generado">
-                <div class="card_contenedor">
-                  <h4></h4>
-                </div>
+      <div class="card-grid1">
+        <div class="card">
+            <img src="./img/clubdelectura.jpg" alt="lectura">
+            <div class="card-content">
+              <h4>Club de Lectura</h4>
+              <p>En el club de lectura lo conforma un grupo de personas que se reúnen periódicamente para comentar e intercambiar opiniones sobre una misma obra que han leído. Se fomenta la relación entre personas interesadas en la literatura. Se promueve el intercambio de comentarios de los libros seleccionados.
+              </p>
+              <button class="favorite-button" onclick="toggleFavorite(this)">&#10084;</button>
+              <button class="purchase-button" onclick="redirectTo('codigo_generado.html')">Reservar</button>
             </div>
-        </div>
+          </div>
+      </div>
     </main>
     <footer>
       <!-- Iconos de navegación aquí -->

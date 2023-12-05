@@ -9,23 +9,25 @@
 <script src="Scripts.js"></script>
 </head>
 <body>
-<div class="phone">
-  <div class="app-container">
+<div class="phone"> 
+  <div class="app-container"> 
     <header>
        <button class="back-button" onclick="goBack()">←</button>
-      <h3>QR</h3>
-      <h4>¡Codigo Generado!</h4>
-      <h7>Excelente, tu codigo esta listo para que lo disfrutes.</h7>
+      <h3>Detalle de Lanzamiento</h3>
     </header>
     <main>
-        <div class="contenedor">
-            <div class="card">
-                <img src="img/QR.svg" alt="Código Generado">
-                <div class="card_contenedor">
-                  <h4></h4>
-                </div>
+      <div class="card-grid1">
+        <div class="card">
+            <img src="./img/gaozu.jpg" alt="gaozu">
+            <div class="card-content">
+              <h4>Regreso a Gaozu</h4>
+              <p>Elizabeth llegó a Gaozu para ayudar en una investigación científica. En nombre de la Organización Universal de Sapientes, ella y sus compañeros pretendían explorar el planeta en busca de vida inteligente. Ahora, dieciséis años más tarde, Izzie capitanea la Errante, una basurera a la que han asignado una misión
+              </p>
+              <button class="favorite-button" onclick="toggleFavorite(this)">&#10084;</button>
+              <button class="purchase-button" onclick="redirectTo('codigo_generado.html')">Notificame</button>
             </div>
-        </div>
+          </div>
+      </div>
     </main>
     <footer>
       <!-- Iconos de navegación aquí -->
